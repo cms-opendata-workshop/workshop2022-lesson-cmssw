@@ -27,7 +27,7 @@ docker start -i <theNameOfyourContainer>
 ~~~
 {: .language-bash}
 
-Make sure you change directories to the `CMSSW_5_3_32/src` area; for instance, in Docker:
+Make sure you are in the `CMSSW_7_6_7/src` area of the container. This is the default directory when you start the container, but if you have changed to another directory, come back to it with:
 
 ~~~
 cd /code/CMSSW_7_6_7/src
