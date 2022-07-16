@@ -26,7 +26,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 
 > ## Helpline
 >
-> Remember that we are always available to help.  Our [Mattermost][mattermost] channel is open.
+> Remember that we are always available to help.  Our [Mattermost](https://mattermost.web.cern.ch/cmsodws2022/channels/cmssw-pre-exercise) channel is open.
 {: .callout}
 
 {% include links.md %}
