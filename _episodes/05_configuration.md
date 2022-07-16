@@ -37,12 +37,7 @@ CfiFile_cfi.py  CfiFile_cfi.pyc  ConfFile_cfg.py  ConfFile_cfg.pyc  __init__.py 
 
 You will note that there is also a `CfiFile_cfi.py` in there.  We will not pay attention to this file now, but it instructive to point out that the `_cfg` and `_cfi` descriptors are meaningful.  While the former one defines a top level configuration, the latter works more like a *module initialization* file.  There are also `_cff` files which bear pieces of configuration and so they are dubbed *config fragments*.  You can read a bit more about it in [this subsection](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookConfigFileIntro#PythonConfigExamples) of the Workbook.
 
-Ok, so the file we will play around with is just the top level `Demo/DemoAnalyzer/python/ConfFile_cfg.py`.  Let's take a look with the `nano` editor:
-
-~~~
-nano Demo/DemoAnalyzer/demoanalyzer_cfg.py
-~~~
-{: .language-bash}
+Ok, so the file we will play around with is just the top level `Demo/DemoAnalyzer/python/ConfFile_cfg.py`. Open it in the editor of your local computer from your working directory in `cms_open_data_work/CMSSW_7_6_7/src`.
 
 The first instructions that you will find in all the top level CMSSW config files are the lines
 
@@ -186,7 +181,7 @@ has to do with our recently created `DemoAnalyzer`.  This module is now just a *
 > {: .solution}
 {: .challenge}
 
-Now, before re-compiling our code, let's check that our python configuration is ok.  We can validate the syntax of your configuration using python:
+Now, before re-compiling our code, let's check that our python configuration is ok.  Go to the container shell. We can validate the syntax of your configuration using python:
 
 ~~~
 python Demo/DemoAnalyzer/python/ConfFile_cfg.py
@@ -195,7 +190,7 @@ python Demo/DemoAnalyzer/python/ConfFile_cfg.py
 
 If there are no errors, you are good to go.
 
-Since we modified the source code, let's compile the code again, with `scram`:
+Since we modified the source code, let's compile the code again, with `scram ` in the container:
 
 ~~~
 scram b

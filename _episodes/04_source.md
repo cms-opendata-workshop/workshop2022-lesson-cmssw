@@ -15,12 +15,7 @@ keypoints:
 
 ## Playing with the DemoAnalyzer.cc file
 
-The `DemoAnalyzer.cc` file is the main file of our EDAnalyzer.  As it was mentioned, the default structure is always the same.  Let's look at what is inside using an editor like `nano`:
-
-~~~
-nano Demo/DemoAnalyzer/plugins/DemoAnalyzer.cc
-~~~
-{: .language-bash}
+The `DemoAnalyzer.cc` file in the `Demo/DemoAnalyzer/plugins/` directory is the main file of our EDAnalyzer.  As it was mentioned, the default structure is always the same.  Have a look at what is inside it using your favourite editor of your local computer. Remember that you will find the `Demo` area under the `cms_open_data_work/CMSSW_7_6_7/src` directory on your local computer. As the working directory has been mounted into the container, all changes take effect there as well.
 
 The first thing that you will see is a set of *includes*:
 
@@ -311,7 +306,7 @@ For instance, any instructions placed inside the `beginJob` or `endJob` routine 
 computing job, respectively.  One may also use the `beginRun` and `endRun` routines to, for example, execute code that needs to be run at the
 beginning of each CMS Run, like the trigger routines.
 
-Let's compile (heads-up: it will fail; see below)
+Now, it is time to compile. Remember that while editing is done on your local computer, compiling and running must be done in the container. So let's move to the container shell and compile (heads-up: it will fail; see below)
 
 ~~~
 scram b
