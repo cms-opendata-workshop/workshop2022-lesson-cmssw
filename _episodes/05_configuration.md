@@ -235,7 +235,7 @@ gmake[1]: Leaving directory `/code/CMSSW_7_6_7'
 Finally, let's run the CMSSW job:
 
 ~~~
-cmsRun Demo/DemoAnalyzer/demoanalyzer_cfg.py > mylog.log 2>&1 &
+cmsRun Demo/DemoAnalyzer/python/ConfFile_cfg.py > mylog.log 2>&1 &
 ~~~
 {: language-bash}
 
